@@ -21,6 +21,7 @@ public class FollowHands : MonoBehaviour
     [Header("Controller")]
     public bool enableControllerFollow = true;
     [SerializeField] float controllerSpeed = 1;
+    public float frontBoundary, backBoundary;
 
     private void Update()
     {
@@ -32,6 +33,7 @@ public class FollowHands : MonoBehaviour
 
         var middle = Mathf.Abs((Mathf.Abs(leftZ) - Mathf.Abs(rightZ))) / 2;
         var middleDistance = Mathf.Min(leftZ, rightZ) + middle;
+        middleDistance = Mathf.Clamp(middleDistance, backBoundary, frontBoundary);
         var distance = Mathf.Abs(controller.position.z - middleDistance);
 
         if(distance > 0.2f && enableControllerFollow)
