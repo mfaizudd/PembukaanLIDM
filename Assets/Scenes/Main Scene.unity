@@ -1400,6 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 456461558}
   delayTime: 0
+  hands: {fileID: 1529542090}
 --- !u!23 &644871767
 MeshRenderer:
   m_ObjectHideFlags: 0
