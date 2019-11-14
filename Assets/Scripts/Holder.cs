@@ -7,11 +7,13 @@ public class Holder : MonoBehaviour
 {
     [SerializeField] VideoPlayer player;
     [SerializeField] float delayTime = 3;
+    [SerializeField] GameObject hands;
 
     public void Attach(Transform block)
     {
         block.position = transform.position;
         block.rotation = transform.rotation;
+        hands.SetActive(false);
         StartCoroutine(StartVideoOn(delayTime));
     }
 

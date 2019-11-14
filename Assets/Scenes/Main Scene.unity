@@ -1885,12 +1885,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 7c4a24c88c7cc8b42b91259bacae439e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7c4a24c88c7cc8b42b91259bacae439e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.587
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7c4a24c88c7cc8b42b91259bacae439e,
         type: 3}
@@ -2913,6 +2913,7 @@ GameObject:
   - component: {fileID: 1739422678}
   - component: {fileID: 1739422684}
   - component: {fileID: 1739422685}
+  - component: {fileID: 1739422686}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -3033,7 +3034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739422677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.168, y: 0.041, z: -0.1219}
+  m_LocalPosition: {x: -0.168, y: 0.0019, z: -0.1219}
   m_LocalScale: {x: 0.041, y: 0.041, z: 0.041}
   m_Children:
   - {fileID: 1080676097}
@@ -3071,6 +3072,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1739422686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739422677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b146d0eeaac8571418addc85a4c69315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {fileID: 930029397}
+  holder: {fileID: 644871765}
 --- !u!1001 &1857596701
 PrefabInstance:
   m_ObjectHideFlags: 0
